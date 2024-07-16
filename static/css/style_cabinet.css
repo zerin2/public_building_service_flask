@@ -1,0 +1,89 @@
+@media screen and (max-width: 768px) {
+    .hero.is-large {
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+body {
+    font-family: 'Nunito', sans-serif !important;
+    background-color: #343838;
+}
+
+
+#button_exit, #button_profile {
+    font-size: large;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    margin: 5px;
+}
+
+.navbar-item {
+    color: whitesmoke !important;
+    font-weight: bolder;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.navbar-brand {
+    width: 200px;
+    display: flex;
+    justify-content: left; /* центрирует содержимое по горизонтали */
+    align-items: center; /* центрирует содержимое по вертикали */
+}
+
+.menu-label {
+    color: #919191 !important;
+
+}
+
+.menu-list a {
+    color: white !important;
+}
+
+.menu-list li a {
+    padding: 1px;
+
+}
+
+/*.menu-list img {*/
+/*    width: 16px; !* Ширина иконки *!*/
+/*    height: 16px; !* Высота иконки *!*/
+/*}*/
+
+.menu-list a:hover {
+    text-decoration: none !important; /* отключает подчеркивание при наведении */
+    background-color: transparent !important; /* устанавливает прозрачный фон при наведении */
+}
+
+
+.table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 8px; /* настройте в соответствии с вашими потребностями */
+    border: 1px solid #ddd; /* настройте в соответствии с вашими потребностями */
+    overflow: hidden;
+    word-wrap: break-word; /* или word-wrap: break-word; */
+    /*СПРАВКА*/
+    /*overflow: hidden; скрывает любой текст, который выходит за пределы ячейки таблицы.*/
+    /*white-space: nowrap; предотвращает перенос текста на новую строку в ячейке таблицы,
+    что позволяет тексту отображаться на одной строке.*/
+    /*word-wrap: break-word; разрешает перенос текста на новую строку,
+    если текст не помещается в ячейку таблицы.*/
+}

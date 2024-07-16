@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>{{ context }}</title>
+
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Anybody&amp;display=swap">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='assets/fonts/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='assets/fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='assets/fonts/fontawesome5-overrides.min.css') }}">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='assets/css/Hero-Carousel-images.css') }}">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='assets/css/Navbar-Centered-Brand-icons.css') }}">
+</head>
+
+<body>
+
+
+<div class="text-center mt-5">
+    <div class="error mx-auto" data-text="{{ error }}">
+        <p class="m-0">{{ error }}</p>
+    </div>
+    <p class="text-dark mb-5 lead">{{ context }}</p>
+
+
+    <p class="text-black-50 mb-0">Вы нашли сбой в матрице...</p>
+    <p class="text-dark mb-5 lead">Если не можете получить доступ к необходимой странице или элементу страницы,
+        напишите в тех. поддержку.</p>
+    <div style="display: inline-grid;">
+
+
+{#        тут поправить, чтобы возвращало на страницу именно "назад"#}
+
+        <a href="{{ url_for('auth.login') }}">← Вернуться назад</a></div>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/bs-init.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/theme.js') }}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+{% include 'auth/includes/auth_head.html' %}
+
+<body class="bg-gradient-primary" style="background: var(--bs-gray-300);">
+    <div class="container">
+        <div class="row justify-content-center" style="padding-top: 89px;margin-right: 0px;margin-left: 0px;margin-top: 21px;">
+            <div class="col-md-9 col-lg-12 col-xl-4" style="width: 636px;">
+                <div class="card shadow-lg o-hidden border-0 my-5">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-lg-12 col-xl-12 offset-xxl-3" style="margin-left: 0;">
+                                <div class="p-5" style="height: 435.359px;">
+                                    <div class="text-center">
+                                        <h4 class="text-dark mb-4">
+                                            Письмо для восстановления доступа отправлено
+                                        </h4>
+                                    </div>
+                                    <p style="text-align: center;">
+                                        Письмо с инструкциями по восстановлению
+                                        доступа к вашему аккаунту было отправлено
+                                        на указанный адрес электронной почты.
+                                        Пожалуйста, проверьте свой почтовый ящик
+                                        и следуйте инструкциям в письме.
+                                        <br>
+                                        <br>
+                                        Если вы не видите письмо в
+                                        своём почтовом ящике, проверьте папку
+                                        "Спам" или "Нежелательная почта". Если
+                                        у вас возникли вопросы или вам нужна
+                                        дополнительная помощь, пожалуйста,
+                                        свяжитесь с нашей службой поддержки.
+                                        <br>
+                                    </p>
+                                    <div class="text-center">
+                                        <a class="small"
+                                           href="{{ url_for('auth.registrate') }}">
+                                            Регистрация
+                                        </a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="small"
+                                           href="{{ url_for('auth.login') }}">
+                                        Есть аккаунт? Авторизуйтесь!
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% include 'auth/includes/auth_scripts.html' %}
+
+</body>
+</html>

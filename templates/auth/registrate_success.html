@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+{% include 'auth/includes/auth_head.html' %}
+
+<body style="background: var(--bs-gray-100);">
+    <section class="py-4 py-xl-5">
+        <div class="container">
+            <div class="text-center p-4 p-lg-5" style="margin-top: 121px;">
+                <h1 class="mb-4" style="color: rgb(0,0,0);">Регистрация прошла успешно!</h1>
+                <a class="btn btn-primary fs-5 me-2 py-2 px-4" role="button"
+                   href="{{ url_for('auth.login') }}">
+                    Пройти на страницу входа в личный кабинет
+                </a>
+            </div>
+        </div>
+    </section>
+
+{% include 'auth/includes/auth_scripts.html' %}
+
+</body>
+
+</html>
